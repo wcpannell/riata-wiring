@@ -7,12 +7,7 @@ pipeline {
   }
   stages {
     stage('build docs') {
-      agent {
-        docker {
-          image 'python:3-alpine'
-        }
-        
-      }
+      agent any
       steps {
         sh 'cd docs'
         sh 'pip install pipenv'
