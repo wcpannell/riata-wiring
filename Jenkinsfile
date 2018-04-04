@@ -11,8 +11,7 @@ pipeline {
         sh '''cd docs
 pip install pipenv
 pipenv install
-pipenv shell
-make html'''
+pipenv run make html'''
         archiveArtifacts 'docs/_build/html/*'
       }
     }
