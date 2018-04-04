@@ -1,0 +1,337 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SW_SPST_LED SW6
+U 1 1 5AB88BC1
+P 5450 4050
+F 0 "SW6" H 5475 4275 50  0000 L CNN
+F 1 "Master" H 5450 3925 50  0000 C CNN
+F 2 "" H 5450 4350 50  0001 C CNN
+F 3 "" H 5450 4350 50  0001 C CNN
+	1    5450 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_SPST_LED SW2
+U 1 1 5AB88E32
+P 3400 4050
+F 0 "SW2" H 3425 4275 50  0000 L CNN
+F 1 "Fuel Pump" H 3400 3925 50  0000 C CNN
+F 2 "" H 3400 4350 50  0001 C CNN
+F 3 "" H 3400 4350 50  0001 C CNN
+	1    3400 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_SPST_LED SW3
+U 1 1 5AB89005
+P 3900 4050
+F 0 "SW3" H 3925 4275 50  0000 L CNN
+F 1 "Coils" H 3900 3925 50  0000 C CNN
+F 2 "" H 3900 4350 50  0001 C CNN
+F 3 "" H 3900 4350 50  0001 C CNN
+	1    3900 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_SPST_LED SW4
+U 1 1 5AB8909D
+P 4400 4050
+F 0 "SW4" H 4425 4275 50  0000 L CNN
+F 1 "Injectors" H 4400 3925 50  0000 C CNN
+F 2 "" H 4400 4350 50  0001 C CNN
+F 3 "" H 4400 4350 50  0001 C CNN
+	1    4400 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_SPST_LED SW5
+U 1 1 5AB890DE
+P 4950 4050
+F 0 "SW5" H 4975 4275 50  0000 L CNN
+F 1 "ECM" H 4950 3925 50  0000 C CNN
+F 2 "" H 4950 4350 50  0001 C CNN
+F 3 "" H 4950 4350 50  0001 C CNN
+	1    4950 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_Push_LED SW1
+U 1 1 5AB891C0
+P 2900 4050
+F 0 "SW1" H 2925 4275 50  0000 L CNN
+F 1 "Start" H 2900 3925 50  0000 C CNN
+F 2 "" H 2900 4350 50  0001 C CNN
+F 3 "" H 2900 4350 50  0001 C CNN
+	1    2900 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 5AB894BE
+P 2700 3200
+F 0 "BT?" H 2800 3300 50  0000 L CNN
+F 1 "Battery" H 2800 3200 50  0000 L CNN
+F 2 "" V 2700 3260 50  0001 C CNN
+F 3 "" V 2700 3260 50  0001 C CNN
+	1    2700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 5AB89507
+P 3450 3100
+F 0 "F?" V 3530 3100 50  0000 C CNN
+F 1 "Fuse" V 3375 3100 50  0000 C CNN
+F 2 "" V 3380 3100 50  0001 C CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AB89532
+P 5450 4450
+F 0 "#PWR?" H 5450 4200 50  0001 C CNN
+F 1 "GND" H 5450 4300 50  0000 C CNN
+F 2 "" H 5450 4450 50  0001 C CNN
+F 3 "" H 5450 4450 50  0001 C CNN
+	1    5450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J2
+U 1 1 5AB89556
+P 4300 2600
+F 0 "J2" H 4300 2900 50  0000 C CNN
+F 1 "SWP5" H 4300 2300 50  0000 C CNN
+F 2 "" H 4300 2600 50  0001 C CNN
+F 3 "" H 4300 2600 50  0001 C CNN
+	1    4300 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5AB89678
+P 1450 3600
+F 0 "J1" H 1450 3700 50  0000 C CNN
+F 1 "SWP2" H 1450 3400 50  0000 C CNN
+F 2 "" H 1450 3600 50  0001 C CNN
+F 3 "" H 1450 3600 50  0001 C CNN
+	1    1450 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AB896FF
+P 1650 3800
+F 0 "#PWR?" H 1650 3550 50  0001 C CNN
+F 1 "GND" H 1650 3650 50  0000 C CNN
+F 2 "" H 1650 3800 50  0001 C CNN
+F 3 "" H 1650 3800 50  0001 C CNN
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5AB89720
+P 1650 3500
+F 0 "#PWR?" H 1650 3350 50  0001 C CNN
+F 1 "+12V" H 1650 3640 50  0000 C CNN
+F 2 "" H 1650 3500 50  0001 C CNN
+F 3 "" H 1650 3500 50  0001 C CNN
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3600 1650 3500
+Wire Wire Line
+	1650 3700 1650 3800
+$Comp
+L +12V #PWR?
+U 1 1 5AB8992F
+P 5450 3600
+F 0 "#PWR?" H 5450 3450 50  0001 C CNN
+F 1 "+12V" H 5450 3740 50  0000 C CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3600 5450 3750
+Wire Wire Line
+	5450 3750 5450 3850
+Wire Wire Line
+	5450 4250 5450 4300
+Wire Wire Line
+	5450 4300 5450 4450
+Wire Wire Line
+	2800 4300 2900 4300
+Wire Wire Line
+	2900 4300 3300 4300
+Wire Wire Line
+	3300 4300 3400 4300
+Wire Wire Line
+	3400 4300 3800 4300
+Wire Wire Line
+	3800 4300 3900 4300
+Wire Wire Line
+	3900 4300 4300 4300
+Wire Wire Line
+	4300 4300 4400 4300
+Wire Wire Line
+	4400 4300 4850 4300
+Wire Wire Line
+	4850 4300 4950 4300
+Wire Wire Line
+	4950 4300 5450 4300
+Wire Wire Line
+	2800 4300 2800 4250
+Wire Wire Line
+	2900 4250 2900 4300
+Connection ~ 2900 4300
+Wire Wire Line
+	3300 4250 3300 4300
+Connection ~ 3300 4300
+Wire Wire Line
+	3400 4250 3400 4300
+Connection ~ 3400 4300
+Wire Wire Line
+	3800 4250 3800 4300
+Connection ~ 3800 4300
+Wire Wire Line
+	3900 4250 3900 4300
+Connection ~ 3900 4300
+Wire Wire Line
+	4300 4250 4300 4300
+Connection ~ 4300 4300
+Wire Wire Line
+	4400 4250 4400 4300
+Connection ~ 4400 4300
+Wire Wire Line
+	4850 4250 4850 4300
+Connection ~ 4850 4300
+Wire Wire Line
+	4950 4300 4950 4250
+Connection ~ 4950 4300
+Connection ~ 5450 4300
+Wire Wire Line
+	5350 4250 5150 4250
+Wire Wire Line
+	5150 4250 5150 3750
+Wire Wire Line
+	5150 3750 4950 3750
+Wire Wire Line
+	4950 3750 4400 3750
+Wire Wire Line
+	4400 3750 3900 3750
+Wire Wire Line
+	3900 3750 3400 3750
+Wire Wire Line
+	3400 3750 2900 3750
+Wire Wire Line
+	4950 3750 4950 3850
+Wire Wire Line
+	4400 3750 4400 3850
+Connection ~ 4950 3750
+Wire Wire Line
+	3900 3750 3900 3850
+Connection ~ 4400 3750
+Wire Wire Line
+	3400 3750 3400 3850
+Connection ~ 3900 3750
+Wire Wire Line
+	2900 3750 2900 3850
+Connection ~ 3400 3750
+Wire Wire Line
+	5450 3750 5350 3750
+Wire Wire Line
+	5350 3750 5350 3850
+Connection ~ 5450 3750
+Wire Wire Line
+	4100 2800 4100 3450
+Wire Wire Line
+	4100 3450 2800 3450
+Wire Wire Line
+	2800 3450 2800 3850
+Wire Wire Line
+	3300 3850 3300 3500
+Wire Wire Line
+	3300 3500 4200 3500
+Wire Wire Line
+	4200 3500 4200 2800
+Wire Wire Line
+	4300 2800 4300 3550
+Wire Wire Line
+	4300 3550 3800 3550
+Wire Wire Line
+	3800 3550 3800 3850
+Wire Wire Line
+	4300 3850 4300 3600
+Wire Wire Line
+	4300 3600 4400 3600
+Wire Wire Line
+	4400 3600 4400 2800
+Wire Wire Line
+	4500 2800 4500 3600
+Wire Wire Line
+	4500 3600 4850 3600
+Wire Wire Line
+	4850 3600 4850 3850
+Text Label 4100 3400 1    60   ~ 0
+starter_relay
+Text Label 4400 3400 1    60   ~ 0
+injector_relay
+Text Label 4300 3400 1    60   ~ 0
+coil_relay
+Text Label 4500 3400 1    60   ~ 0
+ECU
+Text Label 4200 3400 1    60   ~ 0
+fpump_relay
+$EndSCHEMATC

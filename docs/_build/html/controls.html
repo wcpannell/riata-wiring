@@ -1,0 +1,128 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Controls &#8212; Riata-Wiring  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="fusebox" href="fusebox.html" />
+    <link rel="prev" title="Welcome to Riata-Wiring’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="controls">
+<h1>Controls<a class="headerlink" href="#controls" title="Permalink to this headline">¶</a></h1>
+<p>The car has had the majority of the factory wiring harness gutted.</p>
+<div class="section" id="dash-cluster">
+<span id="controls-dash-cluster"></span><h2>Dash Cluster<a class="headerlink" href="#dash-cluster" title="Permalink to this headline">¶</a></h2>
+<p>As of right now, the gauge cluster is non-functional. The cluster wiring
+has been run to the ECU area in the passenger footwell.</p>
+</div>
+<div class="section" id="center-console">
+<span id="controls-center-console"></span><h2>Center Console<a class="headerlink" href="#center-console" title="Permalink to this headline">¶</a></h2>
+<p>The switches are mounted to a carbon fiber plate located in the OE radio
+location. All switches are currently wired high-side, directly driving
+their loads. Switches should control the low side of a relay.</p>
+<dl class="docutils">
+<dt>SW1</dt>
+<dd>Starter switch. This switch is already starting to get flakey.
+Switch should control the low side of a relay or be replaced with
+one capable of handling the starter solenoid load.</dd>
+<dt>SW2</dt>
+<dd>Fuel Pump Relay. This relay is also controlled by the Megasquirt.
+This switch provides power, while the MS controls the ground.
+dumb. Remove this functionality and reassign this switch.</dd>
+<dt>SW3</dt>
+<dd>Ignition Coils. This functionality should be combined with the
+injectors.</dd>
+<dt>SW4</dt>
+<dd>Injectors. Combine with Ignition</dd>
+<dt>SW5</dt>
+<dd>ECM. ECU should be turned on with master switch</dd>
+<dt>SW6</dt>
+<dd>start enable. Should control relay that provides power to other
+relays on panel</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Controls</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dash-cluster">Dash Cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#center-console">Center Console</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fusebox.html">fusebox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fuelpump.html">Fuel Pump</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Riata-Wiring’s documentation!</a></li>
+      <li>Next: <a href="fusebox.html" title="next chapter">fusebox</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, C. Pannell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/controls.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
