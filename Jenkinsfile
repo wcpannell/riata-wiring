@@ -7,11 +7,17 @@ pipeline {
   }
   stages {
     stage('build docs') {
+      agent {
+        docker {
+          image 'python:3-alpine'
+        }
+        
+      }
       steps {
-        sh '''cd docs
-pip install pipenv
-pipenv install
-pipenv run make html'''
+        sh 'cd docs'
+        sh 'pip install pipenv'
+        sh 'pipenv install'
+        sh 'pipenv run make html'
         archiveArtifacts 'docs/_build/html/*'
       }
     }
