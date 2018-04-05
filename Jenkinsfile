@@ -9,7 +9,8 @@ pipeline {
     stage('build docs') {
       agent any
       steps {
-        sh 'cd docs'
+        sh 'set -ex && apk add make'
+	sh 'cd docs'
         sh 'pip install pipenv'
         sh 'pipenv install'
         sh 'pipenv run make html'
